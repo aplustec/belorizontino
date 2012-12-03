@@ -1,0 +1,66 @@
+.tabela
+{
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FLOAT: left;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 15px 0px;
+	WIDTH: 900px;
+	PADDING-TOP: 0px;
+	LIST-STYLE-TYPE: none
+}
+.tabela li
+{
+	DISPLAY: inline;
+	FLOAT: left;
+	WIDTH: 150px;
+	height: 180px;
+	margin: 5px;
+	padding: 7px;
+} 
+.tabela li:hover
+{
+	DISPLAY: inline;
+	FLOAT: left;
+	WIDTH: 150px;
+	height: 180px;
+	margin: 5px;
+	padding: 7px;
+	background-color: #DEE2E7;
+} 
+.tabela2
+{
+	FLOAT: left;
+	WIDTH: 550px;
+	LIST-STYLE-TYPE: none;
+	padding: 0px;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 40px;
+}
+.tabela2 li
+{
+	DISPLAY: inline;
+	FLOAT: left;
+	WIDTH: 150px;
+	height: 180px;
+	padding: 7px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+} 
+.tabela2 li:hover
+{
+	DISPLAY: inline;
+	FLOAT: left;
+	WIDTH: 150px;
+	height: 180px;
+	padding: 7px;
+	background-color: #DEE2E7;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+} 

@@ -1,0 +1,98 @@
+<?php echo $this->render('header.phtml'); ?>
+
+<div id="container">
+  <div id="col-left">
+    <h1>Contato</h1>
+<br />
+<form id="form1" name="form1" method="post" action="">
+  <table width="492" border="0">
+    <tr>
+      <td width="452" class="label">Nome</td>
+    </tr>
+    <tr>
+      <td><label for="nome"></label>
+        <span id="spryNOME">
+        <input name="name" type="text" class="form" id="nome" />
+        <span class="textfieldRequiredMsg">Campo vazio</span></span></td>
+    </tr>
+    <tr>
+      <td class="label">E-mail</td>
+    </tr>
+    <tr>
+      <td><label for="email"></label>
+        <span id="spryEMAIL">
+        <input name="email" type="text" class="form" id="email" />
+        <span class="textfieldRequiredMsg">Campo vazio</span></span></td>
+    </tr>
+    <tr>
+      <td class="label">Assunto</td>
+    </tr>
+    <tr>
+      <td><label for="assunto"></label>
+        <span id="spryASSUNTO">
+        <input name="subject" type="text" class="form" id="assunto" />
+        <span class="textfieldRequiredMsg">Campo vazio</span></span></td>
+    </tr>
+    <tr>
+      <td class="label">Mensagem</td>
+    </tr>
+    <tr>
+      <td><label for="mensagem"></label>
+        <span id="spryMENSAGEM">
+        <textarea name="message" cols="45" rows="5" class="form2" id="mensagem"></textarea>
+        <span class="textareaRequiredMsg">Campo vazio</span></span></td>
+    </tr>
+    <tr>
+      <td><input name="enviar" type="submit" class="bt" id="enviar" value="ENVIAR" /></td>
+    </tr>
+  </table>
+</form>
+<span class="copy"><br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+</span></div>
+    <div id="col-right">
+    <h1>Expediente</h1>
+    <h2>      <strong>Diretor Executivo</strong><br />
+      José Milton Bethônico<br />
+jmbethonico@belorizontino.com.br
+<br />
+<br />
+<strong>Diretor de Criação</strong><br />
+Breno Borges
+<br />
+breno.borges@belorizontino.com.br
+<br />
+<br />
+<strong>Projeto Gráfico e Diagramação
+</strong><br />
+Solon Vitor <br />
+(31) 9477-0544
+<br />
+diagramacao@belorizontino.com.br
+<br />
+<br />
+<strong>Editor Responsável
+</strong><br />
+Fádua Lima
+<br />
+redacao@belorizontino.com.br
+<br />
+<br />
+<strong>Tiragem </strong><br />
+30.000 exemplares
+<br />
+Distribuição Gratuita
+<br />
+<strong><br />
+Comercial </strong><br />
+(31) 3063-0075 / 8204-4249<br />
+contato@belorizontino.com.br
+    </h2>
+  </div>
+</div>
+
+<?php echo $this->render('footer.phtml'); ?>

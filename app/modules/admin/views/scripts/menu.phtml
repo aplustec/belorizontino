@@ -1,0 +1,8 @@
+	  <ul class="menu2">
+        <li <?php echo ($this->currentController == 'index') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/admin'); ?>" title="Home"><b>PAINEL</b></a></li>
+        <li <?php echo ($this->currentController == 'news') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/admin/news'); ?>" title="Notícias"><b>NOTÍCIAS</b></a></li>
+        <li <?php echo ($this->currentController == 'edition') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/admin/edition'); ?>" title="Edições"><b>EDIÇÕES</b></a></li>
+        <li <?php echo ($this->currentController == 'banner') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/admin/banner'); ?>" title="Banner"><b>BANNER</b></a></li>
+        <li <?php echo ($this->currentController == 'comment') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/admin/comment'); ?>" title="Comentários"><b>COMENTÁRIOS</b></a></li>
+        <li><a href="<?php echo $this->baseUrl('/logout'); ?>" title="Sair"><b>SAIR</b></a></li>
+      </ul>

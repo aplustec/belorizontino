@@ -1,0 +1,271 @@
+body {
+	margin: 0 0 0 0;
+	
+}
+h1 {
+	font-family: sans-serif;
+	font-size: 24px;
+	color: #497528;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 22px;
+	color: #333;
+	text-align: justify;
+}
+h3 {
+	font-family: sans-serif;
+	font-size: 29px;
+	color: #000;
+	font-weight: bold;
+}
+
+
+#header {
+	height: 120px;
+	width: 100%;
+	background-color: #FAFEFC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EEE;
+}
+#topo {
+	height: 115px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+}
+#logo {
+	float: left;
+	height: 115px;
+	width: 348px;
+}
+#menu {
+	float: left;
+	height: 60px;
+	width: 540px;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+#container {
+	height: 600px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	background-color: #FCFCFC;
+	border: 1px solid #E6E6E6;
+}
+#container-edicoes {
+	height: 645px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	background-color: #FCFCFC;
+	border: 1px solid #E6E6E6;
+}
+
+#container-blog {
+	height: auto;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	background-color: #FCFCFC;
+	border: 1px solid #E6E6E6;
+}
+
+#col-left {
+	float: left;
+	height: 580px;
+	width: 500px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+#box-dialog {
+	height: 350px;
+	width: 880px;
+	padding-top: 10px;
+	padding-bottom: 65px;
+	margin-right: auto;
+	margin-left: auto;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#coment {
+	float: left;
+	height: 350px;
+	width: 350px;
+}
+#dialogs {
+	float: left;
+	height: 350px;
+	width: 480px;
+	margin-left: 40px;
+}
+
+
+#box-news {
+	height: auto;
+	width: 880px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#edicoes {
+	float: left;
+	height: 585px;
+	width: 850px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	margin-left: 10px;
+}
+#footer {
+	height: 50px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+
+#col-right {
+	float: left;
+	height: 580px;
+	width: 300px;
+	padding: 10px;
+	margin-left: 45px;
+}
+.copy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	line-height: 18px;
+}
+.colunista {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #333;
+	line-height: 22px;
+}
+
+.imgleft {
+	float: left;
+	margin-right: 7px;
+}
+
+.label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666;
+}
+.bt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #5C9233;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: POINTER;
+}
+
+.form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	height: 25px;
+	width: 350px;
+	padding-left: 7px;
+	border: 1px solid #DADADA;
+}
+.input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	height: 25px;
+	width: 285px;
+	padding-left: 7px;
+	border: 1px solid #DADADA;
+}
+.area {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	height: 120px;
+	width: 285px;
+	padding-left: 7px;
+	border: 1px solid #DADADA;
+	padding-top: 7px;
+}
+
+
+.form2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	height: 120px;
+	width: 350px;
+	padding-left: 7px;
+	border: 1px solid #DADADA;
+}
+.linka {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+}
+
+.linka:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666;
+	text-decoration: underline;
+}
+.name-coment {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #5C9233;
+	line-height: 21px;
+}
+.coment-detail {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	line-height: 18px;
+}

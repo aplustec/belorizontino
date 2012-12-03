@@ -1,0 +1,21 @@
+	<?php if($this->previous) : ?>
+		<a href="<?php echo $this->baseUrl('/redacao?p=' . $this->previous); ?>">Anterior</a>
+	<?php else : ?>
+		<span class="disabled_tnt_pagination">Anterior</span>
+	<?php endif; ?>
+	
+	<?php foreach($this->pagesInRange as $page) : ?>
+	
+	<?php if($this->current == $page) : ?>
+		<span class="active_tnt_link"><?php echo $page; ?></span>
+	<?php else : ?>
+		<a href="<?php echo $this->baseUrl('/redacao?p=' . $page); ?>"><?php echo $page; ?></a>
+	<?php endif; ?>
+	
+	<?php endforeach; ?>
+	
+	<?php if($this->next) : ?>
+		<a href="<?php echo $this->baseUrl('/redacao?p=' . $this->next); ?>">Proximo</a>
+	<?php else : ?>
+		<span class="disabled_tnt_pagination">Proximo</span>
+	<?php endif; ?>

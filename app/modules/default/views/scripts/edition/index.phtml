@@ -1,0 +1,33 @@
+<?php echo $this->render('header.phtml'); ?>
+
+<div id="container">
+  <div id="edicoes">
+    <h1>Edi&ccedil;&otilde;es</h1>
+    <table width="819" border="0">
+    	
+    	<?php 
+    	$ctrl = 1;
+    	$count = 5;
+    	
+    	foreach($this->editions as $edition) :
+    		echo ($ctrl == 1) ? '<tr>' : ''; 
+    	?>
+    	<td width="159" valign="top">
+    		<a href="<?php echo $this->baseUrl('/uploads/publish/' . $edition->file); ?>" target="_blank"><img src="<?php echo $this->baseUrl('/uploads/images/editions/' . $edition->image); ?>" alt="" width="145" height="217" border="0" /></a><br /><br />
+    		<span class="label"><?php echo $edition->label; ?></span><br /><br />
+    	</td>
+    	<?php
+    		if($ctrl == $count)
+    		{
+    			echo '</tr>';
+    			$ctrl = 1;
+    		} else
+    			$ctrl++;
+    	endforeach; 
+    	?>
+    </table>
+    <h2></h2>
+  </div>
+</div>
+
+<?php echo $this->render('footer.phtml'); ?>

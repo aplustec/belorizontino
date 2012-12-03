@@ -1,0 +1,30 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;&Uacute;ltimas not&iacute;cias</h1>
+  </div>
+  <div id="barra-colunistas">
+  
+  	<?php 
+  	$ctrl = 1;
+  	foreach($this->news as $news) :
+  	?>
+    <div id="notice<?=$ctrl;?>">
+    <div id="cont-notice"><img src="<?php echo $this->baseUrl('/uploads/images/news/' . $news->image); ?>" width="200" height="150" /></div>
+    <div id="info-notice"><span class="destaque"><?php echo $this->date($news->date); ?><br />
+        <strong><?php echo $news->title; ?></strong><br />
+        <?php echo substr($this->stripTags($news->content), 0, 120) . '...'; ?>
+        <br />
+        <br />
+    </span>
+<a href="<?php echo $this->baseUrl('/admin/news/edit/' . $news->idnews); ?>" class="videos">Editar</a>
+   </div>
+    </div>
+    <?php 
+    	if($ctrl == 1)
+    		$ctrl++;
+    endforeach;
+    ?>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

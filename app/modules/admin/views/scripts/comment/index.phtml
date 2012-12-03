@@ -1,0 +1,42 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;Coment&aacute;rios</h1>
+  </div>
+  <div id="videos">
+    <div id="comentarios">
+      <table width="980" border="0" align="center" cellspacing="5">
+      <tr>
+        <td valign="top" class="label">NOT&Iacute;CIA</td>
+        <td height="40" valign="top" class="label">COMENT&Aacute;RIOS</td>
+        <td valign="top" class="label">A&Ccedil;&Otilde;ES</td>
+        <td valign="top" class="label">STATUS</td>
+      </tr>
+      <?php 
+      $ctrl = true;
+      $color = 'bgcolor="#F3F3F3"';
+      
+      foreach($this->paginator as $comment) :
+      	$colored = ($ctrl) ? $color : ''; 
+      ?>
+      <tr <?=$colored;?>>
+      	<td width="233" valign="top" class="destaque"><?php echo $this->getNewsTitle($comment->idnews); ?></td>
+      	<td width="567" height="40" valign="top"><span class="destaque"><strong><?php echo $comment->name; ?> - </strong><?php echo $comment->comment; ?><br /></span></td>
+      	<td width="154" valign="top"><a href="<?php echo $this->baseUrl('/admin/comment/remove/' . $comment->idcomment); ?>"><img src="<?php $this->asset('del.png','imagens'); ?>" width="25" height="20" border="0" title="Remover" /></a> <a href="<?php echo $this->baseUrl('/admin/comment/publish/' . $comment->idcomment); ?>"><img src="<?php $this->asset('validate.png','imagens'); ?>" width="20" height="20" border="0" title="Publicar" /></a></td>
+      	<td width="154" valign="top"><?php if($comment->status){ ?><span class="ativo">Publicado</span><?php } else { ?><span class="inativo">Análise</span><?php } ?></td>
+      </tr>
+      <?php 
+      	$ctrl = ($ctrl) ? false : true;
+      endforeach;
+      ?>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="40"><?php echo $this->paginationcontrol($this->paginator,null,'comment/pagination.phtml'); ?></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+    </table>
+</div>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

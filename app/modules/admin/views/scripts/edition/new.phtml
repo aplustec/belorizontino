@@ -1,0 +1,54 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;Cadastrar Edi&ccedil;&atilde;o</h1>
+  </div>
+  <div id="videos">
+    <div id="video-dir2"><a href="edicoes.php" class="up">Voltar</a><br />
+      <br />
+      <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+        <p>&nbsp;</p>
+        <table width="843" border="0">
+          <tr>
+            <td class="label">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">Dia da Publicação</td>
+          </tr>
+          <tr>
+            <td><input name="date" type="text" class="field2" id="data-exib" />
+              <span class="destaque2"><em>DD/MM/AAAA</em></span></td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">M&ecirc;s / Ano publica&ccedil;&atilde;o</td>
+          </tr>
+          <tr>
+            <td><input name="label" type="text" class="field2" id="data-exib" />
+              <span class="destaque2"><em>M&ecirc;s  AAAA</em></span></td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">Imagem</td>
+          </tr>
+          <tr>
+            <td><input name="image" type="file" size="40" /> 
+              <span class="destaque2"><em>300x450 px JPG</em></span></td>
+          </tr>
+          <tr>
+            <td class="label">Arquivo </td>
+          </tr>
+          <tr>
+            <td><input name="document" type="file" size="40">
+              <span class="destaque2"><em>.pdf</em></span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input name="button" type="submit" class="bt-enviar" id="button" value="Cadastrar" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

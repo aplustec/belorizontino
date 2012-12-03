@@ -1,0 +1,25 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;Not&iacute;cias</h1>
+  </div>
+  <div id="videos">
+  <div id="video-esq"><a href="<?php echo $this->baseUrl('/admin/news/new'); ?>" class="up">Cadastrar not&iacute;cia</a></div>
+  <div id="video-dir">
+    <table width="833" border="0" cellspacing="5">
+      <?php foreach($this->paginator as $news) : ?>
+      <tr>
+        <td width="562" height="40" valign="top"><span class="destaque"><strong><?php echo $this->date($news->date,'common'); ?></strong> - <?php echo $news->title; ?></span><br /></td>
+        <td width="252" valign="top"><a href="<?php echo $this->baseUrl('/admin/news/edit/' . $news->idnews); ?>" class="videos">Editar</a>&nbsp;<a href="<?php echo $this->baseUrl('/admin/news/remove/' . $news->idnews); ?>" class="videos">Apagar</a></td>
+      </tr>
+      <?php endforeach; ?>
+      
+      <tr>
+        <td height="40"><?php echo $this->paginationcontrol($this->paginator,null,'news/pagination.phtml'); ?></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

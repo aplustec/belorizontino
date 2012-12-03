@@ -1,0 +1,33 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;Cadastrar Banner</h1>
+  </div>
+  <div id="videos">
+    <div id="video-dir2"><a href="painel.php" class="up">Voltar</a><br />
+      <br />
+      <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+        <p>&nbsp;</p>
+        <table width="843" border="0">
+          <tr>
+            <td class="label"><img src="<?php echo $this->baseUrl('uploads/images/banner/' . $this->banner->image); ?>" width="499" height="357" /></td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">Imagem</td>
+          </tr>
+          <tr>
+            <td><input name="image" type="file" size="40" /> 
+              <span class="destaque2"><em>500x357 px JPG</em></span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input name="button" type="submit" class="bt-enviar" id="button" value="Cadastrar" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

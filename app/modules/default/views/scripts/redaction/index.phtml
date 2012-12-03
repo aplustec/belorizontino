@@ -1,0 +1,72 @@
+<?php echo $this->render('header.phtml'); ?>
+<div id="container-blog">
+
+	<?php foreach($this->paginator as $news) : ?>
+	<div id="box-news">
+		<a name="news<?=$news->idnews;?>"></a>
+		<h1><?php echo $news->title; ?></h1>
+		<img src="<?php echo $this->baseUrl('/uploads/images/news/' . $news->image); ?>" width="200" height="150" class="imgleft" />
+		<h2>
+			<?php echo $news->content; ?>
+			<br />
+			<br />
+			<strong><?php echo $news->author; ?></strong><br />
+			<?php echo $news->email; ?>
+		</h2>
+	</div>
+	
+	<div id="box-dialog">
+		<div id="coment">
+			<form name="commentNews<?=$news->idnews;?>" id="commentNews<?=$news->idnews;?>" method="post" action="<?php echo $this->baseUrl('/redaction/comment?token=' . rand(1111111111111111,9999999999999999) . '&newsId=' . $news->idnews . '&returnUrl=' . urlencode($this->baseUrl('/redacao?p=' . $this->page . '#news' . $news->idnews))); ?>">
+				<table width="300" border="0">
+					<tr>
+						<td><h1>Deixe seu comentário</h1></td>
+					</tr>
+					<tr>
+						<td class="label">Nome</td>
+					</tr>
+					<tr>
+						<td><input type="text" name="name" id="name" class="input" /></td>
+					</tr>
+					<tr>
+						<td class="label">Comentário</td>
+					</tr>
+					<tr>
+						<td><textarea name="comment" id="comment" cols="45" rows="5" class="area"></textarea></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="button" id="button" value="Enviar" class="bt" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="dialogs">
+			<table width="478" border="0" cellspacing="5">
+				
+				<?php 
+				$comments = $this->getLastCommentsFromNews($news->idnews);
+				foreach($comments as $comment) : 
+				?>
+				<tr>
+					<td height="80" valign="top">
+						<span class="name-coment"><?php echo $comment->name; ?></span><br />
+						<span class="coment-detail"><?php echo $comment->comment; ?></span><br />
+					</td>
+				</tr>
+				<?php 
+				endforeach; 
+				?>
+			</table>
+		</div>
+	</div>
+	<?php endforeach; ?>
+
+<div id="paginacao">
+            <div id="tnt_pagination">
+            <?php echo $this->paginationcontrol($this->paginator,null,'redaction/pagination.phtml'); ?>
+			</div>
+       </div>
+
+</div>
+
+<?php echo $this->render('footer.phtml'); ?>

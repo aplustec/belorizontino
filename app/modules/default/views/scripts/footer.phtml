@@ -1,0 +1,18 @@
+<div id="footer">
+    <span class="copy">
+
+      JORNAL BELORIZONTINO - <strong>(31) 3063-0075 / contato@belorizontino.com.br</strong><br />
+      Copyright - JORNAL BELOHORIZONTINO &copy; 2012. Todos os direitos reservados. </span>
+</div>
+
+<?php if($this->currentController == 'contact') : ?>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("spryNOME", "none", {validateOn:["blur"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("spryEMAIL", "none", {validateOn:["blur"]});
+var sprytextfield3 = new Spry.Widget.ValidationTextField("spryASSUNTO", "none", {validateOn:["blur"]});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("spryMENSAGEM", {validateOn:["blur"]});
+</script>
+<?php endif; ?>
+
+</body>
+</html>

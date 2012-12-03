@@ -1,0 +1,21 @@
+<?php echo $this->render('header.phtml'); ?>
+
+<div id="container">
+  <div id="col-left"> 
+    <h1><br>
+<img src="<?php echo $this->baseUrl('/uploads/images/banner/' . $this->banner->image); ?>" width="499" height="357" border="0" />    </h1>
+    <h2><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </h2>
+</div>
+  <div id="col-right">
+    <h1>Edi&ccedil;&atilde;o Atual - <?php echo $this->edition->label; ?></h1>
+    <br />
+  <a href="<?php echo $this->baseUrl('/uploads/publish/' . $this->edition->file) ; ?>" target="_blank"><img src="<?php echo $this->baseUrl('uploads/images/editions/' . $this->edition->image); ?>" width="300" height="450" border="0" /></a></div>
+</div>
+
+<?php echo $this->render('footer.phtml'); ?>

@@ -1,0 +1,60 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;Editar not&iacute;cia</h1>
+  </div>
+  <div id="notice-edit">
+    <div id="video-dir2"><a href="<?php echo $this->baseUrl('/admin/news'); ?>" class="up">Voltar</a><br />
+      <br />
+      <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+
+        <table width="995" border="0">
+          <tr>
+            <td class="label"><img src="<?php echo $this->baseUrl('/uploads/images/news/' . $this->news->image); ?>" width="200" height="150" /></td>
+          </tr>
+          <tr>
+            <td height="25" class="label">T&iacute;tulo da not&iacute;cia</td>
+          </tr>
+          <tr>
+            <td><input name="title" type="text" class="field" id="titulo" value="<?php echo $this->news->title; ?>" /> </td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">Autor (a)</td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label"><label for="autor"></label>
+            <input name="author" type="text" class="field" id="autor" value="<?php echo $this->news->author; ?>" /></td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">E-mail do Autor (a)</td>
+          </tr>
+          <tr>
+            <td><input name="email" type="text" class="field" id="email-autor" value="<?php echo $this->news->email; ?>" /></td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">Trocar magem</td>
+          </tr>
+          <tr>
+            <td><input name="image" type="file" size="40">
+              <span class="destaque2"><em>200X150px  JPG</em></span></td>
+          </tr>
+          <tr>
+            <td height="25" valign="bottom" class="label">Texto</td>
+          </tr>
+          <tr>
+            <td><textarea name="content" cols="45" rows="5" class="area" id="textarea"><?php echo $this->news->content; ?></textarea></td>
+          </tr>
+          <tr>
+            <td height="45">&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input name="button" type="submit" class="bt-enviar" id="button" value="Atualizar" /></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+      </form>
+    </div>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

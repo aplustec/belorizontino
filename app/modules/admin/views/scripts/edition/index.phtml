@@ -1,0 +1,45 @@
+<?php echo $this->render('header.phtml'); ?>
+
+  <div id="destaque">
+    <h1>&nbsp;&nbsp;Edi&ccedil;&otilde;es</h1>
+  </div>
+  <div id="videos">
+  <div id="video-esq"><a href="<?php echo $this->baseUrl('/admin/edition/new'); ?>" class="up">Cadastrar edi&ccedil;&atilde;o </a></div>
+  <div id="video-dir">
+    <table border="0" cellspacing="5">
+    
+    	<?php 
+    	$count = 5;
+    	$ctrl = 1;
+    	
+    	foreach($this->paginator as $edition) :
+    		echo ($ctrl == 1) ? '<tr>' : '';
+    	?>
+    	<td width="150" valign="top">
+    		<a href="<?php echo $this->baseUrl('/uploads/publish/' . $edition->file); ?>" target="_blank"><img src="<?php echo $this->baseUrl('/uploads/images/editions/' . $edition->image); ?>" width="133" height="199" border="0" /></a><br />
+    		<span class="destaque"><?php echo $edition->label; ?></span><br /><br />
+    		<a href="<?php echo $this->baseUrl('/admin/edition/remove/' . $edition->idedition); ?>" class="videos">Apagar</a>
+    	</td>
+    	<?php 
+    		if($ctrl == $count)
+    		{
+    			echo '</tr>';
+    			$ctrl = 1;
+    		} else
+    			$ctrl++;
+    	endforeach;
+    	?>
+    
+      
+      <tr>
+        <td width="150" height="80">&nbsp;</td>
+        <td width="150" height="40">&nbsp;</td>
+        <td width="150">&nbsp;</td>
+        <td width="150">&nbsp;</td>
+        <td width="150"><?php echo $this->paginationcontrol($this->paginator,null,'edition/pagination.phtml'); ?></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+
+<?php echo $this->render('footer.phtml'); ?>

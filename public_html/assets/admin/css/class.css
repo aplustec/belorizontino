@@ -1,0 +1,218 @@
+.apresentacao {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #65C6EA;
+	line-height: 40px;
+}
+.title {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #2284B3;
+	padding: 5px;
+}
+
+.hora {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	font-weight: normal;
+	line-height: 40px;
+}
+.label {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	color: #666;
+	font-weight: bold;
+}
+.label2 {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.field {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	height: 24px;
+	width: 700px;
+	border: 1px solid #CCC;
+}
+.field2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	height: 24px;
+	width: 150px;
+	border: 1px solid #CCC;
+}
+.field3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	height: 24px;
+	width: 200px;
+	border: 1px solid #CCC;
+	background-color: #F5F5F5;
+}
+
+
+.area {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	height: 300px;
+	width: 800px;
+	border: 1px solid #CCC;
+}
+.bt-enviar {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #063;
+	height: 27px;
+	width: 100px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+}
+.bt-enviar2 {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #3F5F1F;
+	height: 27px;
+	width: 100px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+}
+
+
+
+
+
+.direitos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	font-weight: normal;
+	line-height: 30px;
+}
+.obrigatorio {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	font-weight: normal;
+	line-height: 30px;
+}
+.asterisco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #C00;
+	font-weight: normal;
+}
+
+
+
+.destaque {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+	line-height: 18px;
+}
+.destaque2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+	line-height: 18px;
+}
+
+/*.destaque:hover {
+	text-decoration: none;
+	color: #0A3D5A;
+}*/
+.videos {
+	font-family: 'Arimo', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 18px;
+	background-color: #518B25;
+	padding: 7px;
+}
+.videos:hover {
+	text-decoration: none;
+	background-color: #759EA0;
+}
+.ativo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #090;
+}
+.inativo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #999;
+}
+
+.visitas {
+	float: left;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.barbosa {
+	float: left;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+.baixo {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 18px;
+}
+.baixo:hover {
+	text-decoration: underline;
+}
+.up {
+	font-family: 'Arimo', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 18px;
+	background-color: #999;
+	padding: 7px;
+}
+.up:hover {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #888;
+}

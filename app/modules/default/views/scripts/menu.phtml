@@ -1,0 +1,8 @@
+		<ul class="menu2">
+			<li <?php echo ($this->currentController == 'index') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/'); ?>" title="Home">HOME</a></li>
+			<li <?php echo ($this->currentController == 'about') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/sobre'); ?>" title="Quem Somos">QUEM SOMOS</a></li>
+			<li <?php echo ($this->currentController == 'edition') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/edicoes'); ?>" title="Edições">EDIÇÕES</a></li>
+			<li <?php echo ($this->currentController == 'redaction') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/redacao'); ?>" title="Colunistas">DIRETO DA REDAÇÃO</a></li>
+			<li <?php echo ($this->currentController == 'partner') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/parceiros'); ?>" title="Parceiros">PARCEIROS</a></li>
+			<li <?php echo ($this->currentController == 'contact') ? 'class="current"' : ''; ?>><a href="<?php echo $this->baseUrl('/contato'); ?>" title="Contato">CONTATO</a></li>
+		</ul>
